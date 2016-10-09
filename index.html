@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PS4</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="js/utils.js"></script>
+        <script type="text/javascript">
+        function LoadPage() 
+        {
+            document.getElementById("environment").innerHTML = GetUserAgent();
+        }
+        window.onload = LoadPage;
+        </script>
+    </head>
+    <body>
+        <h1><div align="center" id="environment"></div></h1>
+        <hr>
+        <div align="center" class="box-container">
+        <div class="box">
+        <h2>JS::TypedArray.fill() Memory Corruption</h2>
+        <!-- WebKit - TypedArray.fill Memory Corruption -->
+        <!-- https://www.exploit-db.com/exploits/40183/ -->
+        <div align="center"><input style="font-size:15px" type='button' value='Launch' onclick='window.location.replace("fill().html");' /></div>
+        </div>
+        </div>
+    </body>
+</html>
