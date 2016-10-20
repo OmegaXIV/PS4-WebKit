@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <script type="text/javascript" src="js/utils.js"></script>
+        <script type="text/javascript" src="js/iframe.js"></script>
         <script type="text/javascript">
         function LoadPage() 
         {
@@ -18,6 +19,14 @@
         <hr>
         <div align="center" class="box-container">
         <div class="box">
+        <h2>JS::iframe.focus() Memory Corruption</h2>
+        <div align="center"><button onclick="run()">Crash</button></div>
+        </div>
+        <div class="box">
+        <h2>JS::history.pushState() Memory Corruption</h2>
+        <div align="center"><input style="font-size:15px" type='button' value='Launch' onclick='window.location.replace("pushState().html");' /></div>
+        </div>
+        <div class="box">
         <h2>JS::TypedArray.fill() Memory Corruption</h2>
         <!-- WebKit - TypedArray.fill Memory Corruption -->
         <!-- https://www.exploit-db.com/exploits/40183/ -->
@@ -28,7 +37,8 @@
         <!-- WebKit - TypedArray.copyWithin Memory Corruption -->
         <!-- https://www.exploit-db.com/exploits/40184/ -->
         <div align="center"><input style="font-size:15px" type='button' value='Launch' onclick='window.location.replace("copyWithin().html");' /></div>
-        </div>        
+        </div>    
         </div>
+        <div align="center"><iframe align="center"></iframe></div>
     </body>
 </html>
